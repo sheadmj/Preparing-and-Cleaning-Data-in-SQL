@@ -3,7 +3,7 @@
 
 
 <h2>Description</h2>
-Using SQL to clean automobile data. Data obtained through Google Analytics Certificate program.
+Using SQL to clean automobile data. Data obtained through Google Data Analytics Certificate program.
 <br />
 
 
@@ -25,40 +25,23 @@ Using SQL to clean automobile data. Data obtained through Google Analytics Certi
 <h2>Walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+1. Confirm column "fuel_type" doesn't have any unexpected values. Expected values = 2: Gas and Diesel.  <br/>
+<img src="https://i.imgur.com/Oa5wzBu.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+2. Inspect the length column. The "length" column contains the lengths of the cars. Lengths should range 141.1-208.1.  <br/>
+<img src="https://i.imgur.com/ImsUqrM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+3. Check Data for Null values. Discovered null value in column "num_of_doors". <br/>
+<img src="https://i.imgur.com/OltOqpI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+4. Update Missing Data. We know that all Mazda diesel sedans sold had 4 doors. <br/>
+<img src="https://i.imgur.com/YbQ0lSE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+
+
+
